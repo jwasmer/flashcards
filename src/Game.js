@@ -22,14 +22,14 @@ class Game {
 
   start() {
     let cards = data.prototypeData.map(cardData => {
-      return new Card(cardData)
+      return new Card(cardData);
     })
     
-    this.deck = new Deck(cards)
-    this.round = new Round(this.deck)
+    this.deck = new Deck(cards);
+    this.round = new Round(this.deck);
 
-    this.printMessage(this.deck, this.round)
-    this.printQuestion(this.round)
+    this.printMessage(this.deck, this.round);
+    this.printQuestion(this.round);
   }
 }
 
